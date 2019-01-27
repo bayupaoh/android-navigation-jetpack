@@ -4,13 +4,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
-    <TextView
+    <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Menu Two Fragment"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menu Two Fragment"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        <Button
+                android:id="@+id/btnDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Navigate To Detail Fragment"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="12dp"/>
+
+        <Button
+                android:id="@+id/btnDetailBundle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Navigate To Detail Fragment With Bundle"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="12dp"/>
+    </LinearLayout>
+
 
 </RelativeLayout>
