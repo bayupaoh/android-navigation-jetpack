@@ -5,12 +5,34 @@
                 android:layout_height="match_parent">
 
 
-    <TextView
+    <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Menu Three Fragment"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Menu Three Fragment"
+                android:hint="Type a message"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        <EditText
+                android:id="@+id/menuThreeMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"/>
+
+        <Button
+                android:id="@+id/menuThreeSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
